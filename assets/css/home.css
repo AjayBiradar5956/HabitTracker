@@ -68,11 +68,6 @@ label {
     color: red;
 }
 
-.completed::before {
-    content: "";
-    background-color: green;
-}
-
 .viewCalendar button i:hover {
     color: blue;
     cursor: pointer;
