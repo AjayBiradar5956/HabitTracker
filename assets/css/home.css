@@ -1,0 +1,155 @@
+.dateSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.habitCreation {
+    width: 75%;
+    height: 45vh;
+    background-image: linear-gradient(to bottom right, #FF61D2, #FE9090);
+}
+
+.newHabit {
+    width: 300px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    border: none;
+}
+
+label {
+    font-size: 1.1rem;
+    font-family: sans-serif;
+}
+
+.habitList {
+    background-color: lightcoral;
+    min-height: auto;
+}
+
+.ulList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 !important;
+
+}
+
+.ulList li {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+.delete {
+    position: absolute;
+    right: 0;
+    margin-right: 25px;
+}
+
+.viewCalendar {
+    position: absolute;
+    right: 0;
+    margin-right: 80px;
+}
+
+.arrange {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.delete a i:hover {
+    color: red;
+}
+
+.viewCalendar button i:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+    margin-top: 15px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td {
+    font-weight: bold;
+}
+
+tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+tr:first-child th {
+    background-color: #ddd;
+}
+
+.calendar-container {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.months-container {
+    display: flex;
+}
+
+.month-container {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.month-container:not(:first-child) {
+    margin-left: 10px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.arrow:hover {
+    background-color: #ddd;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
